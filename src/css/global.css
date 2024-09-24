@@ -54,6 +54,7 @@ a{
  flex-direction: column;
  flex-wrap:nowrap;
  justify-content: space-around;
+ row-gap:6pt;
 
  font-family:"DM Sans";
  font-size: 14pt;
@@ -62,6 +63,8 @@ a{
  background-color:var(--color-half-dark);
  
  position: fixed;
+
+ overflow-y: scroll;
 }
 
 /*-Profile*/
@@ -106,7 +109,7 @@ a{
  flex-direction: row;
  flex-wrap:nowrap;
  justify-content: center;
- column-gap:6pt;
+ column-gap:18pt;
 }
 .profile .contact span{
  font-size:14pt;
@@ -150,13 +153,13 @@ nav .menuItem{
 
 /*-DownloadBtn*/
 .downloadBtn{
- --download-btn-height:64px;
+ --download-btn-height:48px;
 
  width:calc(100% - 12pt);
  height:var(--download-btn-height);
 
  font:inherit;
- font-size:16pt;
+ font-size:14pt;
 }
 .downloadBtn .internal {
  height:var(--download-btn-height);
@@ -168,7 +171,6 @@ nav .menuItem{
  background-color: var(--color-dark);;
  border-color: var(--color-dark);;
  border-radius: 48px;
- border-style: solid;
 
  transition:.5s;
 }
@@ -184,7 +186,9 @@ nav .menuItem{
 }
 .internal .label{
  width:max-content;
+ 
  font:inherit;
+ 
  margin:0;
 
  position:absolute;
@@ -196,7 +200,7 @@ nav .menuItem{
 
  transition:.5s;
 }
-.internla .lable.download{
+.internal .label.download{
  opacity:100%;
 }
 .internal .label.click{
@@ -204,6 +208,10 @@ nav .menuItem{
 }
 .internal:hover .label.download{
  opacity:0%;
+ width:max-content;
+ right:100%;
+ top:calc(var(--download-btn-height) / 2);
+ transform:translate(100%,-50%);
 }
 .internal:hover .label.click{
  opacity:100%;
@@ -246,5 +254,8 @@ main{
 
 /*Config*/
 .defaultMargin {
- margin: 6pt;
+ margin: 24pt 6pt;
+}
+.defaultMargin-Bottom {
+ margin: 12pt;
 }

@@ -1,9 +1,15 @@
+import SelfDescription from "./SelfDescription"
+import PhotoPresentation from "./PhotoPresentation"
+
 function Content() {
  return (
   <>
   
-   <main>
-    Conteúdo Principal
+   <main className="defaultPadding">
+    <header>
+     <SelfDescription/>
+     <PhotoPresentation/>
+    </header>
    </main>
 
   </>

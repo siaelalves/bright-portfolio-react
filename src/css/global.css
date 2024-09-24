@@ -18,8 +18,11 @@
  -DownloadBtn
 
  Main
+ -Header
 
  Config
+ Box
+ Button
 */
 
 /*Fonts*/
@@ -30,15 +33,31 @@
 
 /*Vars*/
 :root{
- --color-dark:#0f141c;
+ --side-menu-width:256px;
+
+ /* PALETA DE CORES*/
+ --color-primary:#0f141c;
  --color-half-dark:#171b22;
- --color-half-gray:#909090;
- --color-profile-bkg:#7579ff;
+ --color-secondary:#909090;
+ --color-terciary:#7579ff;
+ 
+ --color-button-primary:#00CC97;
+ --color-button-secondary:#FFDB59;
 }
 
 /*Global*/
+div{
+ margin:0;
+}
 div#root{
  display:flex;
+ font-family:"DM Sans";
+}
+h1,h2,h3{
+ color:#FFFFFF;
+}
+h1{
+ font-size:72pt;
 }
 a{
  text-decoration:none;
@@ -48,7 +67,7 @@ a{
 /*sideMenu*/
 .sideMenu {
  height: 100vh;
- width: 256px;
+ width: var(--side-menu-width);
 
  display:flex;
  flex-direction: column;
@@ -56,7 +75,6 @@ a{
  justify-content: space-around;
  row-gap:6pt;
 
- font-family:"DM Sans";
  font-size: 14pt;
  color:#FFFFFF;
 
@@ -83,7 +101,7 @@ a{
  height:33%;
  width:100%;
  border-radius:18pt;
- background-color:var(--color-profile-bkg);
+ background-color:var(--color-terciary);
  position:absolute;
  bottom:0%;
  right:0%;
@@ -102,7 +120,7 @@ a{
 .profile .ability{
  font:inherit;
  text-align: center;
- color:var(--color-half-gray);
+ color:var(--color-secondary);
 }
 .profile .contact {
  display:flex;
@@ -127,22 +145,22 @@ nav {
 }
 nav .menuItem{
  width:calc(100% - 36pt);
- color:var(--color-half-gray);
+ color:var(--color-secondary);
  padding:6pt 18pt; 
 
  border-bottom-width:1px;
- border-bottom-color:var(--color-half-gray);
+ border-bottom-color:var(--color-secondary);
  border-bottom-style: solid;
 }
 .menuItem:hover,.menuItem:hover span{
- color:var(--color-profile-bkg);
+ color:var(--color-terciary);
 }
 .menuItem, .menuItem span {
  transition:color .5s ease;
 }
 .menuItem.first{ 
  border-top-width:1px;
- border-top-color:var(--color-half-gray);
+ border-top-color:var(--color-secondary);
  border-top-style: solid;
 }
 .menuItem span{
@@ -168,21 +186,21 @@ nav .menuItem{
 
  padding: 2pt;
 
- background-color: var(--color-dark);;
- border-color: var(--color-dark);;
+ background-color: var(--color-primary);;
+ border-color: var(--color-primary);;
  border-radius: 48px;
 
  transition:.5s;
 }
 .internal:hover{
- background-color:var(--color-profile-bkg);
+ background-color:var(--color-terciary);
 }
 .internal:hover .iconArea{
  position:absolute;
  left:calc(100% - var(--download-btn-height)); 
 
  background-color:#FFFFFF;
- color:var(--color-profile-bkg);
+ color:var(--color-terciary);
 }
 .internal .label{
  width:max-content;
@@ -238,24 +256,112 @@ nav .menuItem{
  font-size:24px;
 
  border-radius:var(--download-btn-height);
- background-color:var(--color-profile-bkg);
+ background-color:var(--color-terciary);
 
  transition:.5s;
 }
 
 /*Main*/
 main{
- height:100vh;
+ min-height:100vh;
  width:100%;
- background-color:var(--color-dark);
- float:right;
+ margin-left:var(--side-menu-width);
+ background-color:var(--color-primary);
  color:#FFFFFF;
+}
+
+/*-Header*/
+header{
+ height:100%;
+ display:flex;
+ flex-direction: row;
+ flex-wrap:nowrap;
+ gap:6pt;
+}
+.selfDescription{
+ height:100%;
+ display:flex;
+ flex-direction: column;
+ font-size:20pt;
+ align-content:space-around;
+ row-gap:44pt;
+}
+.selfDescription .abilities{
+ color:var(--color-terciary);
+ font:inherit;
+ font-weight: bold;
+}
+.selfDescription .description{
+ color:var(--color-secondary);
+ font:inherit;
+}
+.selfDescription .contactButtons{
+ width:100%;  
+
+ display:flex;
+ flex-direction: row;
+ column-gap:6pt;
+}
+.photoPresentation{
+ padding:12pt;
+ position:relative;
+}
+.photoPresentation img {
+ height:auto;
+ width:480px;
+}
+.photoPresentation .box{
+ font-size:16pt;
+ position:absolute;
+ 
+ transform:translate(12.5%,-50%);
 }
 
 /*Config*/
 .defaultMargin {
  margin: 24pt 6pt;
 }
+.defaultPadding {
+ padding: 24pt 6pt;
+}
 .defaultMargin-Bottom {
  margin: 12pt;
+}
+
+/*Box*/
+.box{ 
+ height:auto;
+ min-height:64px;
+ padding:8%; 
+ background-color:var(--color-half-dark);
+ border-radius:24px;
+}
+.box.smaller{
+ width:calc(44% - 8%);
+}
+.box.medium{
+ width:calc(66% - 8%);
+}
+.box.bigger{
+ width:calc(88% - 8%);
+}
+
+/*Button*/
+button{
+ min-height:48px;
+ min-width:192px;
+ font-size: 16pt;
+ padding:12pt;
+ color: #000000;
+
+ border-style: solid;
+ border-radius: 36px;
+
+ cursor: pointer;
+}
+button.primary{
+ background-color:var(--color-button-primary);
+}
+button.secondary{
+ background-color:var(--color-button-secondary);
 }

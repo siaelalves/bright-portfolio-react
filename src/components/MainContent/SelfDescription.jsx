@@ -4,7 +4,7 @@ function SelfDescription() {
  return (
   <>
    <div className="selfDescription">
-    <h1><strong>Siael</strong> Alves</h1>
+    <h1><strong>Emanuel</strong> Souza</h1>
     <div className="abilities">Web Developer</div>
     <div className="description">
      Aprecio grandemente meus clientes e meu produto porque todos 

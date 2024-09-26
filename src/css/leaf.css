@@ -27,8 +27,7 @@ html{
  position:relative;
 }
 body{
- height:1280px;
- width:1280px;
+ min-height:100vh; 
  position:relative;
  margin:0 auto;
 }

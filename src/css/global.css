@@ -35,6 +35,10 @@
 :root{
  --side-menu-width:256px;
 
+ /* MEDIDAS */
+ --main-side-padding:24pt;
+ --main-upDown-padding:24pt;
+
  /* PALETA DE CORES*/
  --color-primary:#0f141c;
  --color-half-dark:#171b22;
@@ -58,6 +62,12 @@ h1,h2,h3{
 }
 h1{
  font-size:72pt;
+}
+h2{
+ font-size:48pt;
+}
+h3{
+ font-size:24pt;
 }
 a{
  text-decoration:none;
@@ -84,6 +94,9 @@ a{
 
  overflow-y: scroll;
 }
+.sideMenu h2{
+ font-size:20pt;
+}
 
 /*-Profile*/
 .profile {
@@ -98,7 +111,7 @@ a{
  z-index: 1;
 }
 .photo .bkg {
- height:33%;
+ height:50%;
  width:100%;
  border-radius:18pt;
  background-color:var(--color-terciary);
@@ -272,20 +285,23 @@ main{
 
 /*-Header*/
 header{
- height:100%;
+ height:auto;
  display:flex;
  flex-direction: row;
- flex-wrap:nowrap;
+ flex-wrap:wrap;
+ justify-content: space-between;
  gap:6pt;
 }
-.selfDescription{
- height:100%;
- display:flex;
- padding:8pt;
+.selfDescription {
+ height: 100%;
+ display: flex;
  flex-direction: column;
- font-size:20pt;
- align-content:space-around;
- row-gap:44pt;
+ font-size: 20pt;
+ align-content: space-around;
+ row-gap: 44pt;
+ flex-shrink: 1;
+ flex-grow: 2;
+ flex-basis: 50%;
 }
 .selfDescription .abilities{
  color:var(--color-terciary);
@@ -303,13 +319,18 @@ header{
  flex-direction: row;
  column-gap:6pt;
 }
-.photoPresentation{
- padding:12pt;
- position:relative;
+.photoPresentation {
+ width: calc(50% - calc(var(--main-side-padding) * 2));
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ align-items: center;
+ justify-content: flex-start;
 }
 .photoPresentation img {
  height:auto;
- width:480px;
+ width:80%;
 }
 .photoPresentation .box{
  font-size:16pt;
@@ -323,7 +344,7 @@ header{
  margin: 24pt 6pt;
 }
 .defaultPadding {
- padding: 24pt 6pt;
+ padding: var(--main-upDown-padding) var(--main-side-padding);
 }
 .defaultMargin-Bottom {
  margin: 12pt;
@@ -331,17 +352,16 @@ header{
 
 /*Box*/
 .clientBox{
- --client-photo-size:48px;
+ --client-photo-size:3.5vw;
 
  height:auto;
- width:calc(66% - 8%);
- min-height:64px;
- font-size:16pt;
+ width:20vw;
+ min-height:13%;
+ font-size:1.6vw;
  padding:8%; 
  background-color:var(--color-half-dark);
  border-radius:24px;
-
- transform:translate(calc(25% - 12pt),-50%);
+ transform:translateY(-50%);
 }
 .clientBox p{
  margin-bottom:14pt;
@@ -352,6 +372,7 @@ header{
  align-items: center;
  justify-content: space-between;
  position:relative;
+ font-size:inherit;
 }
 .clientBox .list .photos {
  width:44%;
@@ -381,14 +402,14 @@ header{
 }
 .clientBox .list p{
  width:36%;
- font-size:14pt;
+ font-size:inherit;
  margin:0;
 }
 
 /*Button*/
 button{
- min-height:48px;
- min-width:192px;
+ min-height:24px;
+ min-width:144px;
  font-size: 16pt;
  padding:12pt;
  color: #000000;

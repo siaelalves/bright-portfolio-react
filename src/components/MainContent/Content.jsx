@@ -1,5 +1,6 @@
 import SelfDescription from "./SelfDescription"
 import PhotoPresentation from "./PhotoPresentation"
+import WorldApproval from "./WorldApproval"
 
 function Content() {
  return (
@@ -9,6 +10,7 @@ function Content() {
     <header>
      <SelfDescription/>
      <PhotoPresentation/>
+     <WorldApproval/>
     </header>
    </main>
 

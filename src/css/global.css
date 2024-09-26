@@ -33,11 +33,17 @@
 
 /*Vars*/
 :root{
- --side-menu-width:256px;
+ /* FONTE */
+ --font-default:"DM Sans"; 
 
  /* MEDIDAS */
+ --side-menu-width:256px;
+
  --main-side-padding:24pt;
+ --main-side-total-padding:calc(var(--main-side-padding) * 2);
  --main-upDown-padding:24pt;
+
+ --main-total-width:calc(100% - calc(var(--main-side-total-padding) + var(--side-menu-width)));
 
  /* PALETA DE CORES*/
  --color-primary:#0f141c;
@@ -53,7 +59,7 @@
 div{
  margin:0;
 }
-div#root{
+div#root,span{
  display:flex;
  font-family:"DM Sans";
 }
@@ -68,6 +74,7 @@ h2{
 }
 h3{
  font-size:24pt;
+ margin-bottom:18pt;
 }
 a{
  text-decoration:none;
@@ -277,7 +284,7 @@ nav .menuItem{
 /*Main*/
 main{
  min-height:100vh;
- width:100%;
+ width:var(--main-total-width);
  margin-left:var(--side-menu-width);
  background-color:var(--color-primary);
  color:#FFFFFF;
@@ -290,7 +297,8 @@ header{
  flex-direction: row;
  flex-wrap:wrap;
  justify-content: space-between;
- gap:6pt;
+ column-gap:6pt;
+ row-gap:24pt;
 }
 .selfDescription {
  height: 100%;
@@ -337,6 +345,38 @@ header{
  position:absolute;
  
  transform:translate(12.5%,-50%);
+}
+.worldApproval{
+ max-width:calc(100% - var(--main-side-padding));
+}
+.worldApproval .logoList{
+ max-width:inherit;
+ font-family:inherit;
+ font-size:18pt;
+ display:flex;
+ overflow:hidden;
+}
+.worldApproval .logoList .item{
+ display:flex;
+ flex-direction: row;
+ flex-wrap:nowrap;
+ align-items: center;
+ justify-content: center;
+ column-gap:6pt;
+
+ padding:20pt;
+ margin-left:12pt;
+ color:#FFFFFF;
+ font-size:inherit;
+ 
+ border-width:1px;
+ border-style:solid;
+ border-radius:32px;
+ border-color:#FFFFFF;
+}
+.worldApproval .logoList .item img{
+ height:auto;
+ width:50px;
 }
 
 /*Config*/

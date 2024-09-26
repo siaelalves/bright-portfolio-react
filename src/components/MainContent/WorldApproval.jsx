@@ -4,14 +4,36 @@ function WorldApproval () {
    <div className="worldApproval">
     <h3>Aprovado por clientes internacionais</h3>
     <div className="logoList">
-     <span className="logo icon-netflix"></span>
-     <span className="logo icon-nokia"></span>
-     <span className="logo icon-obsstudio"></span>
-     <span className="logo icon-openvpn"></span>
-     <span className="logo icon-playstation4"></span>
-     <span className="logo icon-plesk"></span>
-     <span className="logo icon-quora"></span>
-     <span className="logo icon-figma"></span>
+     <div class="item">
+      <img src="../src/assets/netflix.svg"/><span>Netflix</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/kentico.svg"/><span>Kentico</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/logitech.svg"/><span>Logitech</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/nokia.svg"/><span>Nokia</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/rtm.svg"/><span>RTM</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/victronenergy.svg"/><span>Victron Energy</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/walmart.svg"/><span>Walmart</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/netflix.svg"/><span>Netflix</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/netflix.svg"/><span>Netflix</span>
+     </div>
+     <div class="item">
+      <img src="../src/assets/netflix.svg"/><span>Netflix</span>
+     </div>
     </div>    
    </div>
   </>

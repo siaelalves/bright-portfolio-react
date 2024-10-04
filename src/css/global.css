@@ -29,6 +29,8 @@
  TimeLine
  Works
  EducationItem
+
+ Animações
 */
 
 /*Fonts*/
@@ -375,12 +377,24 @@ header{
 }
 .worldApproval .logoList{
  max-width:inherit;
+ 
+ 
+ display:flex;
+ flex-direction:row;
+ flex-wrap:nowrap;
+ justify-content: center;
+ align-items:center;
+ column-gap: 12pt;
+
  font-family:inherit;
  font-size:18pt;
  display:flex;
- overflow:hidden;
+
+ animation:marquee-horizontal 10s linear infinite;
 }
 .worldApproval .logoList .item{
+ min-width: 144px;
+ min-height: 64px;
  display:flex;
  flex-direction: row;
  flex-wrap:nowrap;
@@ -389,14 +403,13 @@ header{
  column-gap:6pt;
 
  padding:20pt;
- margin-left:12pt;
  color:#FFFFFF;
  font-size:inherit;
  
  border-width:1px;
  border-style:solid;
  border-radius:32px;
- border-color:#FFFFFF;
+ border-color:#FFFFFF; 
 }
 .worldApproval .logoList .item img{
  height:auto;
@@ -686,4 +699,10 @@ section.myXp{
 
  }
 
+}
+
+/*Animações*/
+@keyframes marquee-horizontal {
+ 0%{transform:translateX(0);}
+ 100%{transform:translateX(-100%);}
 }

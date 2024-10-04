@@ -182,6 +182,11 @@ nav {
 }
 nav .menuItem{
  width:calc(100% - 36pt);
+
+ display:flex;
+ flex-direction: row;
+ column-gap:8pt;
+
  color:var(--color-secondary);
  padding:6pt 18pt; 
 
@@ -202,7 +207,6 @@ nav .menuItem{
 }
 .menuItem span{
  font-size:16pt;
- margin-right:16pt;
  color:#FFFFFF;
 }
 

@@ -4,6 +4,7 @@ import WorldApproval from "./WorldApproval"
 import AboutMe from "./AboutMe"
 import Education from "./Education"
 import Experience from "./Experience"
+import Skills from "./Skills"
 
 function Content() {
  return (
@@ -17,7 +18,8 @@ function Content() {
      <div class="works">
       <Education/>
       <Experience/>
-     </div>     
+     </div> 
+     <Skills/>
     </header>
    </main>
 

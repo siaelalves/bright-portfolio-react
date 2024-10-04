@@ -212,23 +212,26 @@ nav .menuItem{
 
 /*-DownloadBtn*/
 .downloadBtn{
- --download-btn-height:48px;
+ --track-height:64px;
+ --download-btn-height:var(--track-height);
 
- width:calc(100% - 12pt);
- height:var(--download-btn-height);
+ width:calc(100% - 24pt);
+ height:var(--download-btn-height); 
 
  font:inherit;
  font-size:14pt;
 }
 .downloadBtn .internal {
+ width:100%;
  height:var(--download-btn-height);
+
+ margin:0 auto;
+
  position:relative;
  font: inherit;
 
- padding: 2pt;
-
- background-color: var(--color-primary);;
- border-color: var(--color-primary);;
+ background-color: var(--color-primary);
+ border-color: var(--color-primary);
  border-radius: 48px;
 
  transition:.5s;

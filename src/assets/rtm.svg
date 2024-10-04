@@ -1,1 +1,40 @@
-<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>RTM</title><path d="M5.584 9.054H1.98l-.487 1.413h3.408c.54 0 .594.25.51.494-.084.244-.18.323-.719.323h-3.43L0 14.946h1.917l.892-2.454c.263 0 .33.024.436.257l1.043 2.197h2.084l-1.148-2.46c1.368-.15 1.985-.822 2.206-1.698.211-.837-.173-1.734-1.846-1.734m2.817 0-.487 1.413H10l-1.541 4.48 2.036-.001 1.54-4.479h1.94l.486-1.413H8.4zm7.89 0h-1.306l-.485 1.414h.624c.272 0 .416.22.322.493l-1.368 3.985h2.036l1.37-3.988c.37-1.08.053-1.905-1.194-1.904m3.186 0h-1.16l-.486 1.414h.48c.271 0 .415.22.322.493l-1.368 3.985H19.3l1.37-3.988c.37-1.08.053-1.904-1.194-1.904m3.185 0h-1.16l-.485 1.414h.479c.272 0 .416.22.323.493l-1.369 3.985h2.036l1.37-3.988c.37-1.08.054-1.904-1.194-1.904"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="rtm.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="19.666667"
+     inkscape:cx="9.0508475"
+     inkscape:cy="14.59322"
+     inkscape:window-width="1680"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <title
+     id="title2">RTM</title>
+  <path
+     d="M5.584 9.054H1.98l-.487 1.413h3.408c.54 0 .594.25.51.494-.084.244-.18.323-.719.323h-3.43L0 14.946h1.917l.892-2.454c.263 0 .33.024.436.257l1.043 2.197h2.084l-1.148-2.46c1.368-.15 1.985-.822 2.206-1.698.211-.837-.173-1.734-1.846-1.734m2.817 0-.487 1.413H10l-1.541 4.48 2.036-.001 1.54-4.479h1.94l.486-1.413H8.4zm7.89 0h-1.306l-.485 1.414h.624c.272 0 .416.22.322.493l-1.368 3.985h2.036l1.37-3.988c.37-1.08.053-1.905-1.194-1.904m3.186 0h-1.16l-.486 1.414h.48c.271 0 .415.22.322.493l-1.368 3.985H19.3l1.37-3.988c.37-1.08.053-1.904-1.194-1.904m3.185 0h-1.16l-.485 1.414h.479c.272 0 .416.22.323.493l-1.369 3.985h2.036l1.37-3.988c.37-1.08.054-1.904-1.194-1.904"
+     id="path4"
+     style="fill:#ffffff" />
+</svg>

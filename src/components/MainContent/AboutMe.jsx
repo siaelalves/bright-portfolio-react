@@ -4,7 +4,7 @@ function AboutMe () {
  return (
   <>
    <section id="AboutMe">
-    <TitleLine title="About Me."/>
+    <TitleLine title="Sobre Mim."/>
     <p className="introduction">
      Olá, meu nome é Emanuel Souza e comecei a usar o WordPress quando comecei. 
      Passei a maior parte das minhas horas de vigília nos últimos dez anos projetando, 

@@ -135,7 +135,7 @@ a{
  z-index: 1;
 }
 .photo .bkg {
- height:50%;
+ height:66%;
  width:100%;
  border-radius:18pt;
  background-color:var(--color-terciary);
@@ -402,7 +402,7 @@ header{
 
 /*Config*/
 .defaultMargin {
- margin: 24pt 6pt;
+ margin: 24pt 12pt;
 }
 .defaultPadding {
  padding: var(--main-upDown-padding) var(--main-side-padding);

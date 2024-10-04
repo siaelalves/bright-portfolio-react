@@ -25,6 +25,7 @@
  Button
  TitleLine
  AboutEntry
+ Titles
  Paragraphs
  TimeLine
  Works
@@ -583,6 +584,9 @@ button.secondary{
  }
 
 }
+
+/*Titles*/
+ /*No content for titles*/
 
 /*Paragraphs*/
 p.introduction{

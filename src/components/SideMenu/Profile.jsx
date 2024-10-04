@@ -8,7 +8,7 @@ function Profile() {
     <img src="../src/assets/profile-photo.png"></img>
    </div>
    <h2 className="name">
-    Emanuel Souza
+    <b>Emanuel</b> Souza
    </h2>
    <div className="ability">
     Web Designer

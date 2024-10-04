@@ -65,6 +65,9 @@
 }
 
 /*Global*/
+body{
+ width:1444px;
+}
 div{
  margin:0;
 }

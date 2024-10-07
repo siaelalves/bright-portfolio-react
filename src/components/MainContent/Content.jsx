@@ -6,6 +6,7 @@ import Education from "./Education"
 import Experience from "./Experience"
 import Skills from "./Skills"
 import Awards from "./Awards"
+import Services from "./Services"
 
 function Content() {
  return (
@@ -22,6 +23,7 @@ function Content() {
      </div> 
      <Skills/>
      <Awards/>
+     <Services/>
     </header>
    </main>
 

@@ -7,6 +7,7 @@ import Experience from "./Experience"
 import Skills from "./Skills"
 import Awards from "./Awards"
 import Services from "./Services"
+import Portfolio from "./Portfolio"
 
 function Content() {
  return (
@@ -24,6 +25,7 @@ function Content() {
      <Skills/>
      <Awards/>
      <Services/>
+     <Portfolio/>
     </header>
    </main>
 

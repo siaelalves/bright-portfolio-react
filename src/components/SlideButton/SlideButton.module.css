@@ -1,0 +1,96 @@
+/*-slideButton*/
+.slideButton{
+ --margin-around:24pt;
+ --track-height:64px;
+ --download-btn-height:var(--track-height);
+
+ width:calc(100% - (var(--margin-around) * 2));
+ height:var(--download-btn-height); 
+ margin:var(--margin-around);
+
+ font:inherit;
+ font-size:14pt;
+}
+.slideButton .internal {
+ width:100%;
+ height:var(--download-btn-height);
+
+ margin:0 auto;
+
+ position:relative;
+ font: inherit;
+
+ background-color: var(--color-primary);
+ border-color: var(--color-primary);
+ border-radius: 48px;
+
+ transition:.5s;
+}
+.internal:hover{
+ background-color:var(--color-terciary);
+}
+.internal:hover .iconArea{
+ position:absolute;
+ left:calc(100% - var(--download-btn-height)); 
+
+ background-color:#FFFFFF;
+ color:var(--color-terciary);
+}
+.internal .label{
+ width:max-content;
+ 
+ font:inherit;
+ 
+ margin:0;
+
+ position:absolute;
+ right:0%;
+ top:calc(var(--download-btn-height) / 2);
+ transform:translateY(-50%);
+
+ padding:0 6pt;
+
+ transition:.5s;
+}
+.internal .label.download{
+ opacity:100%;
+}
+.internal .label.click{
+ opacity:0%;
+}
+.internal:hover .label.download{
+ opacity:0%;
+ width:max-content;
+ right:100%;
+ top:calc(var(--download-btn-height) / 2);
+ transform:translate(100%,-50%);
+}
+.internal:hover .label.click{
+ opacity:100%;
+ width:max-content;
+ right:100%;
+ top:calc(var(--download-btn-height) / 2);
+ transform:translate(100%,-50%);
+}
+.internal .iconArea{
+ height:var(--download-btn-height);
+ width:var(--download-btn-height);
+
+ margin:0;
+
+ position:absolute;
+ left:0%;
+
+ display:flex;
+ flex-direction:column;
+ flex-wrap:nowrap;
+ justify-content:center;
+ align-items:center;
+
+ font-size:24px;
+
+ border-radius:var(--download-btn-height);
+ background-color:var(--color-terciary);
+
+ transition:.5s;
+}

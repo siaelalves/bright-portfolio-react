@@ -1,0 +1,75 @@
+.opacityCard{
+ width:calc((100% / 3) - 12pt);
+ height:auto;
+ flex:1 3 calc((100% / 3) - 12pt);
+ 
+ display:flex;
+ flex-direction:column;  
+ gap:6pt;
+
+ position:relative;
+
+ object-fit: cover;
+ border-radius:12pt;
+
+ .image{
+  width:100%;
+  height:auto;
+  border-radius:12pt;
+  position:relative;
+
+  img{
+   width:100%;
+   height:auto;
+   border-radius:12pt;
+  }
+
+  &:hover{
+
+   .company{
+    background-color:#7579ff80;
+    
+    .logo,.name{
+     opacity:1;
+    }
+   }
+
+  }
+
+  .company{
+   width:100%;
+   height:100%;
+
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   row-gap:6pt;
+
+   background-color:#7579ff00;
+   border-radius:12pt;
+   position:absolute;
+   left:0;
+   bottom:0;
+
+   cursor:pointer;
+   transition:background-color .5s ease;
+
+   .logo{
+    width:64px;
+   }
+
+   .name{
+    color:#FFFFFF;
+   }
+
+   .logo,.name{
+    opacity:0;
+    transition:opacity .5s ease;
+   }
+
+  }
+
+ }
+
+}

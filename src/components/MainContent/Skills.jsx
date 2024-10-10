@@ -5,7 +5,7 @@ function Skills(){
  return (
   <>
    <TitleLine title="Habilidades."/>
-   <section class="skill-list">
+   <section id="skill-list" class="skill-list">
     <CircleGraphic value="75"/>
     <CircleGraphic value="34"/>
     <CircleGraphic value="89"/>

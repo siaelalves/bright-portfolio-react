@@ -6,7 +6,7 @@ function Portfolio(){
  return(
   <>
    <TitleLine title="Portfólio"/>
-   <section className="portfolio">
+   <section id="portfolio" className="portfolio">
     <OpacityCard image="../src/assets/portfolio-1.png" title="Marca Empresarial" type="Branding" logo="../src/assets/zelit.svg" name="Zelt"/>
     <OpacityCard image="../src/assets/portfolio-2.png" title="App Financeiro" type="App" logo="../src/assets/fee.svg" name="Fee"/>
     <OpacityCard image="../src/assets/portfolio-3.png" title="Cidade em 3D" type="Modelagem" logo="../src/assets/model.svg" name="Model"/>

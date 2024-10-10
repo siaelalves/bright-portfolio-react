@@ -1,7 +1,7 @@
 function WorldApproval () {
  return (  
   <>
-   <div className="worldApproval">
+   <section id="worldApproval" className="worldApproval">
     <h3>Aprovado por clientes internacionais</h3>
     <div className="logoList">
      <div class="item">
@@ -49,7 +49,7 @@ function WorldApproval () {
      </div>
 
     </div>
-   </div>
+   </section>
   </>
  )
 }

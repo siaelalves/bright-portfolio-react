@@ -5,7 +5,7 @@ function Services(){
  return(
   <>
    <TitleLine title="Serviços"/>
-   <div className="serviceList">
+   <section id="serviceList" className="serviceList">
     <p class="intro">
      Minha visão é um mundo em que todas as tecnologias tem um objetivo bem definido e 
      que as pessoas gastem mais tempo aproveitando o que seus dispositivos podem fazer do que 
@@ -17,7 +17,7 @@ function Services(){
      <ServiceItem icon="../src/assets/service-3.svg" title="Desenvolvedor Web" description="Desenvolvi sites responsivos, otimizei o desempenho, implementei funcionalidades interativas e garanti a compatibilidade entre navegadores."/>
      <ServiceItem icon="../src/assets/service-4.svg" title="Desenvolvedor de App" description="Desenvolvi aplicativos móveis intuitivos, otimizei a performance, implementei funcionalidades inovadoras e assegurei uma experiência de usuário fluida."/>
     </div>    
-   </div>
+   </section>
    
   </>
  )

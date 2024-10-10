@@ -3,7 +3,7 @@ import TitleLine from "./TitleLine"
 function AboutMe () {
  return (
   <>
-   <section id="AboutMe">
+   <section id="aboutMe">
     <TitleLine title="Sobre Mim."/>
     <p className="introduction">
      Olá, meu nome é Emanuel Souza e comecei a usar o WordPress quando comecei. 

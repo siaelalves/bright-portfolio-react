@@ -1,18 +1,18 @@
 import TitleLine from "./TitleLine"
-import SkillItem from "./Skill-item"
+import CircleGraphic from "../CircleGraphic/CircleGraphic"
 
 function Skills(){
  return (
   <>
    <TitleLine title="Habilidades."/>
-   <div class="skill-list">
-    <SkillItem value="75"/>
-    <SkillItem value="34"/>
-    <SkillItem value="89"/>
-    <SkillItem value="46"/>
-    <SkillItem value="92"/>
-    <SkillItem value="69"/>
-   </div>
+   <section class="skill-list">
+    <CircleGraphic value="75"/>
+    <CircleGraphic value="34"/>
+    <CircleGraphic value="89"/>
+    <CircleGraphic value="46"/>
+    <CircleGraphic value="92"/>
+    <CircleGraphic value="69"/>
+   </section>
   </>
  )
 }

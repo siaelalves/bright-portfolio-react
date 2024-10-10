@@ -1,0 +1,62 @@
+/*CircleGraphics*/
+.circleGraphic{
+ --circle-size:128px;
+ --circle-width:6px;
+ --circle-style:solid;
+ --circle-value:91%;
+ --circle-color-active:#d81ec8;
+ --circle-color-inactive:var(--color-half-dark);
+ 
+ --value-font-size:32pt;
+ --value-font-color:var(--color-highlight);
+ --value-size:calc(var(--value-font-size) * 2);
+ --value-position-x:calc((var(--circle-size) / 2)  - (var(--value-size) / 2));
+ 
+ width:var(--circle-size);
+ height:var(--circle-size);
+
+ display:flex;
+ flex-direction: column;
+ flex-wrap:nowrap;
+ justify-content: center;
+ align-items: center;
+
+ background-color:var(--circle-color-active);
+
+ font-size:var(--value-font-size);
+
+ position:relative;
+
+ border-radius:var(--circle-size);
+
+ z-index:0;
+ 
+ .innerCircle,.openingCircle{
+  width:calc(var(--circle-size) - var(--circle-width));
+  height:calc(var(--circle-size) - var(--circle-width));
+  
+  position:absolute;
+  top:calc(var(--circle-width) / 2);
+  left:calc(var(--circle-width) / 2);
+
+  border-radius:var(--circle-size);
+
+  background-color: var(--circle-color-inactive);
+ }
+
+ .openingCircle{
+  width:var(--circle-size);
+  height:var(--circle-size);
+
+  top:0;
+  left:0;
+
+  background: conic-gradient(rgba(27,27,34) 90deg, rgba(255,255,255,0) 0deg);
+ }
+
+ .value{
+  font-size:var(--value-font-size);
+  z-index: 1;
+ }
+
+}

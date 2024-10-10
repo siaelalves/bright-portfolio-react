@@ -1,5 +1,5 @@
 import ServiceItem from "./ServiceItem"
-import TitleLine from "./TitleLine"
+import TitleLine from "../TitleLine/TitleLine"
 
 function Services(){
  return(

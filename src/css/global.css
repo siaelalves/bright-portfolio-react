@@ -22,7 +22,6 @@
  Config
  Box
  Button
- TitleLine
  AboutEntry
  Titles
  Paragraphs
@@ -403,26 +402,6 @@ header{
  width:36%;
  font-size:inherit;
  margin:0;
-}
-
-/*TitleLine*/
-.titleline{ 
- width:100%;
- display: flex;
- flex-direction: row;
- align-items: baseline;
- margin-bottom:12pt;
-
- h2{
-  word-break: keep-all; 
- }
-
- .line {
-  height:1px;
-  background-color:#FFFFFF80;
-  flex:1 2 50%;
- }
-
 }
 
  /*AboutEntry*/

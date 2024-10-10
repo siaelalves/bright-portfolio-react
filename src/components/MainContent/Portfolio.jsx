@@ -1,4 +1,4 @@
-import TitleLine from "./TitleLine"
+import TitleLine from "../TitleLine/TitleLine"
 import OpacityCard from "../OpacityCard/OpacityCard"
 import ShutterButton from "../ShutterButton/ShutterButton"
 

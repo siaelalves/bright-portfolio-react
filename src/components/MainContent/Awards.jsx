@@ -1,5 +1,5 @@
 import FlipCard from "../FlipCard/FlipCard"
-import TitleLine from "./TitleLine"
+import TitleLine from "../TitleLine/TitleLine"
 
 function Awards(){
  return(

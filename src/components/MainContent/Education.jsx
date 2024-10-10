@@ -1,4 +1,4 @@
-import TitleLine from "./TitleLine"
+import TitleLine from "../TitleLine/TitleLine"
 import TimeLine from "../TimeLine/TimeLine"
 
 function Education(){

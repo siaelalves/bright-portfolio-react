@@ -1,4 +1,4 @@
-import TitleLine from "./TitleLine"
+import TitleLine from "../TitleLine/TitleLine"
 
 function AboutMe () {
  return (

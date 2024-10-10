@@ -1,4 +1,4 @@
-import TitleLine from "./TitleLine"
+import TitleLine from "../TitleLine/TitleLine"
 import CircleGraphic from "../CircleGraphic/CircleGraphic"
 
 function Skills(){

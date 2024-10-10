@@ -1,5 +1,5 @@
 import TitleLine from "./TitleLine"
-import EducationItem from "./EducationItem"
+import TimeLine from "../TimeLine/TimeLine"
 
 function Education(){
  return (
@@ -7,7 +7,7 @@ function Education(){
   <section id="Education" className="myXp">
    <TitleLine title="Educação."/>
    <div className="timeLine">
-    <EducationItem
+    <TimeLine
      title="Mestre em Design" 
      place="UFBR, entre 2010 e 2015" 
      description="Projetos acadêmicos, iniciação científica, 
@@ -15,7 +15,7 @@ function Education(){
      em design de interfaces móveis."
      />
 
-     <EducationItem
+     <TimeLine
       title="Bacharelado em Ciência" 
       place="UFJK, entre 2016 e 2018" 
       description="Explorei a minha criatividade, estética e 
@@ -24,7 +24,7 @@ function Education(){
       impactantes e funcionais."
      />
 
-     <EducationItem
+     <TimeLine
       title="Diploma em Design de Interface" 
       place="UFMO, entre 2019 e 2021" 
       description="Interfaces intuitivas e funcionais, 

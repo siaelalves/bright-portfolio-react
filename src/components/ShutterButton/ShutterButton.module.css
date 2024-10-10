@@ -1,0 +1,43 @@
+/*Button*/
+button{
+ min-height:24px;
+ min-width:144px;
+ font-size: 16pt;
+ padding:12pt;
+ color: #000000;
+ box-sizing:content-box;
+ overflow:hidden;
+
+ position:relative;
+
+ border-style: solid;
+ border-radius: 36px;
+
+ cursor: pointer;
+
+ transition:all .5s ease;
+ z-index:1;
+}
+button:before{
+ content:""; 
+ height:100%;
+ width:100%;
+ position:absolute;
+ top:-100%;
+ left:0;
+ background-color:var(--color-terciary);
+ transition:all .35s ease;
+ z-index: -1;
+}
+button:hover{
+ color:#FFFFFF;
+}
+button:hover:before{
+ top:0%;
+}
+button.primary{
+ background-color:var(--color-button-primary);
+}
+button.secondary{
+ background-color:var(--color-button-secondary);
+}

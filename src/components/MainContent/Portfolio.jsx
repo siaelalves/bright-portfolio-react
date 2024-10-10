@@ -1,6 +1,7 @@
 import TitleLine from "./TitleLine"
 import PortfolioItem from "./PortfolioItem"
 import DefaultButton from "./DefaultButton"
+import ShutterButton from "../ShutterButton/ShutterButton"
 
 function Portfolio(){
  return(
@@ -14,7 +15,7 @@ function Portfolio(){
     <PortfolioItem image="../src/assets/portfolio-5.png" title="Fade" type="Música de Fundo" logo="../src/assets/moo-car.svg" name="Moo Car"/>
     <PortfolioItem image="../src/assets/portfolio-6.png" title="App de Banco" type="App" logo="../src/assets/pocket-bank.svg" name="Pocket Bank"/>
    </div>
-   <DefaultButton label="Ver mais" type="primary"/>
+   <ShutterButton label="Ver mais" type="primary"/>
   </>
  )
 }

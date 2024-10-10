@@ -1,4 +1,5 @@
 import DefaultButton from "./DefaultButton"
+import ShutterButton from "../ShutterButton/ShutterButton"
 
 function SelfDescription() {
  return (
@@ -11,9 +12,9 @@ function SelfDescription() {
      sabem que sou sempre a melhor opção.
     </div>
     <div className="contactButtons">
-     <DefaultButton label={"Portfólio"} type={"primary"}/>
-     <DefaultButton label={"Contato"} type={"secondary"}/>
-    </div>    
+     <ShutterButton label="Portfólio" type="primary"/>
+     <ShutterButton label="Contato" type="secondary"/>
+    </div>
    </div>
   </>
  )

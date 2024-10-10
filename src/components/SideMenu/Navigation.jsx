@@ -1,16 +1,18 @@
+import LeafIcon from "../LeafIcon/LeafIcon"
+
 function Navigation ( ) {
  return (
   <>
 
    <nav>
-    <a className="menuItem first" href="#"><span className="icon-home"></span>Início</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Sobre</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Currículo</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Serviços</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Portfólio</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Preços</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Blog</a>
-    <a className="menuItem" href="#"><span className="icon-profile"></span>Contato</a>
+    <a className="menuItem first" href="#"><LeafIcon name="home"/>Início</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Sobre</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Currículo</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Serviços</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Portfólio</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Preços</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Blog</a>
+    <a className="menuItem" href="#"><LeafIcon name="profile"/>Contato</a>
    </nav>
 
   </>

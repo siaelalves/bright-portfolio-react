@@ -1,4 +1,3 @@
-import DefaultButton from "./DefaultButton"
 import ShutterButton from "../ShutterButton/ShutterButton"
 
 function SelfDescription() {

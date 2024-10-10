@@ -17,16 +17,16 @@ function Content() {
      <SelfDescription/>
      <PhotoPresentation/>
      <WorldApproval/>
-     <AboutMe/>
-     <div class="works">
-      <Education/>
-      <Experience/>
-     </div> 
-     <Skills/>
-     <Awards/>
-     <Services/>
-     <Portfolio/>
     </header>
+    <AboutMe/>
+    <div class="works">
+     <Education/>
+     <Experience/>
+    </div> 
+    <Skills/>
+    <Awards/>
+    <Services/>
+    <Portfolio/>
    </main>
 
   </>

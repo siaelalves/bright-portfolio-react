@@ -1,7 +1,8 @@
 .openCard{ 
  --card-padding:48pt;
  --card-font-size:20pt;
- --top-color:var(--color-terciary);  
+ --top-color-1:var(--color-terciary);
+ --top-color-2:var(--color-secondary);
  --bottom-color:#FFFFFF;
 
  .top, .bottom{
@@ -10,8 +11,16 @@
  }
 
  .top{  
-  color:#FFFFFF;
-  background-color:var(--top-color);
+  color:#FFFFFF;  
+
+  &.standard{
+   background-color:var(--top-color-1);
+  }
+ 
+  &.full{
+   background-color:var(--top-color-2);
+  }
+
  }
 
  .bottom{  

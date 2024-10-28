@@ -8,7 +8,7 @@ import Skills from "./Skills"
 import Awards from "./Awards"
 import Services from "./Services"
 import Portfolio from "./Portfolio"
-import Pricing from "./Pricing"
+import Pricing from "./Pricing/Pricing"
 
 function Content() {
  return (

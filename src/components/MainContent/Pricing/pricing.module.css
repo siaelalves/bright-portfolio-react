@@ -1,0 +1,52 @@
+.pricing{
+ --total-columns:3;
+ --column-width:calc((100% / var(--total-columns)) - 48pt);
+
+ width:100%;
+ display:flex;
+ flex-direction:column;
+ flex-wrap:nowrap;
+ gap:24pt;
+
+ .retractInfo{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  column-gap:48pt;
+  background-color: var(--color-half-dark);
+
+  .serviceInfo{
+   width:var(--column-width);
+   display:flex;
+   flex-direction:column;
+   flex-wrap:nowrap;
+   justify-content:center;
+   row-gap:24pt;
+  }
+  .verticalLine{
+   margin:0;
+   background-color:var(--color-secondary);
+   border-style:solid;
+   border-width:1px; 
+   border-color:var(--color-secondary);
+  }
+  
+  .getPlan{
+   width:var(--column-width);
+   display:flex;
+   flex-direction:column;
+   flex-wrap:nowrap;
+   justify-content:center;
+   align-items: center;
+   row-gap:12pt;
+
+   .note{
+    font-size:16pt; 
+   }
+
+  }
+
+ }
+
+}

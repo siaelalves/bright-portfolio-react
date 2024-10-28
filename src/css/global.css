@@ -453,13 +453,6 @@ p.info{
 section.myXp{
  flex:1 2 49%;
 }
-section.pricing{
- width:100%;
- display:flex;
- flex-direction:column;
- flex-wrap:nowrap;
- gap:24pt;
-}
 
 /*TimeLine*/
 .timeLine{
@@ -585,31 +578,7 @@ section.pricing{
 }
 
 /*RetractInfo*/
-.retractInfo{
- width:100%;
- display:flex;
- flex-direction:row;
- flex-wrap:wrap;
- column-gap:48pt;
- background-color: var(--color-half-dark);
-}
-.retractInfo .serviceInfo{
- display:flex;
- flex-direction:column;
- flex-wrap:nowrap;
- justify-content:center;
- row-gap:24pt;
-}
-.retractInfo .verticalLine{
- margin:0;
- background-color:var(--color-secondary);
- border-style:solid;
- border-width:1px; 
- border-color:var(--color-secondary);
-}
-.retractInfo .serviceInfo p{
- 
-}
+
 
 /*Portfolio*/
 .portfolio{

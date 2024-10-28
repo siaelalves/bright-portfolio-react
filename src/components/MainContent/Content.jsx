@@ -1,6 +1,6 @@
 import SelfDescription from "./SelfDescription"
 import PhotoPresentation from "./PhotoPresentation"
-import WorldApproval from "./WorldApproval"
+import WorldApproval from "./WorldApproval/WorldApproval"
 import AboutMe from "./AboutMe"
 import Education from "./Education"
 import Experience from "./Experience"

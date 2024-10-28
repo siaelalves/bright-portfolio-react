@@ -295,48 +295,7 @@ header{
  
  transform:translate(12.5%,-50%);
 }
-.worldApproval{
- max-width:calc(100% - var(--main-side-padding));
-}
-.worldApproval .logoList{
- max-width:inherit;
- 
- display:flex;
- flex-direction:row;
- flex-wrap:nowrap;
- justify-content: center;
- align-items:center;
- column-gap: 12pt;
 
- font-family:inherit;
- font-size:18pt;
- display:flex;
-
- animation:marquee-horizontal 10s linear infinite;
-}
-.worldApproval .logoList .item{
- min-width: 144px;
- min-height: 64px;
- display:flex;
- flex-direction: row;
- flex-wrap:nowrap;
- align-items: center;
- justify-content: center;
- column-gap:6pt;
-
- padding:20pt;
- color:#FFFFFF;
- font-size:inherit;
- 
- border-width:1px;
- border-style:solid;
- border-radius:32px;
- border-color:#FFFFFF; 
-}
-.worldApproval .logoList .item img{
- height:auto;
- width:50px;
-}
 
 /*Config*/
 .defaultMargin {
@@ -589,11 +548,6 @@ section.myXp{
  gap: 16pt;
 }
 
-/*Animações*/
-@keyframes marquee-horizontal {
- 0%{transform:translateX(0);}
- 100%{transform:translateX(-100%);}
-}
 @keyframes graphic-calculating {
  0%{
   background: conic-gradient(rgba(27,27,34) 360deg, rgba(255,255,255,0) 0deg);
